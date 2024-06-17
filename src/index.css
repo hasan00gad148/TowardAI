@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Adjust the 42px based on your toolbar height */
+.quill{
+  overflow: hidden;
+  box-sizing: border-box !important;
+}
+.ql-container {
+    height: calc(100% - 42px); 
+    overflow-y: hidden;
+  }
+.ql-editor {
+  box-sizing: border-box !important;
+height: 500px !important;
+height: auto ;
+overflow-y: auto; /* Add scroll for overflow */
+overflow-x: auto;
+}
+.ql-toolbar{
+
+}

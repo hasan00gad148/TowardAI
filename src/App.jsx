@@ -1,12 +1,18 @@
-import { useState } from 'react'
+import React,{ useState,useEffect } from 'react'
+import Mainlayout from './pages/mainlayout'
+import { Provider,useDispatch } from 'react-redux'
+import userStore from "./stores/userStore"
 
 
-function App({k}) {
-  const [count, setCount] = useState(0)
+
+
+function App() {
 
   return (
     <>
-     
+      <Provider store={userStore}>
+        <Mainlayout/>
+      </Provider>
     </>
   )
 }
